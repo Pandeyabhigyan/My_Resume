@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage{color}
+\definecolor{primary}{RGB}{107, 16, 86}
+\definecolor{secondary}{RGB}{0, 0, 0}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.4,0.5} % Link color
+% \definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{tabularx}
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+\vspace{0.4cm}
+
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+\
+\normalsize \faGithub\ {\href{https://github.com/Pandeyabhigyan}{\  Pandeyabhigyan}}\\
+\columnbreak
+\normalsize\par{\centering{\huge\textsc{\textcolor{primary}{Abhigyan Kumar Pandey}}}\par} % Your name
+\par{\centering\normalsize {\large{\textsc{Bhubaneswar, India}}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:abhigyanpandey10@gmail.com}{\  abhigyanpandey10@gmail.com}}\\
+\raggedright\hfill\normalsize \faLinkedinSquare\ {\href{https://www.linkedin.com/in/abhigyan-kumar-pandey-a410b7239/}{\  Abhigyan Kumar Pandey}}\\
+
+\end{multicols}
+\vspace{0.6 cm}
+% \par{\centering\normalsize {\textit{"It is easier to ask for forgiveness, than permission."}}\hfill\par}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2cm}
+\section{\LARGE{\textcolor{primary}{Academics}}}\\[4mm]
+
+\begin{tabular}{r|p{17.5cm}}\\	
+
+
+
+\Large{\textbf{2021}} & \Large{\textit{ B.Tech} in \textbf{Computer Science and Engineering, Kalinga Institue of Industrial Technology } graduating in \textbf{2025}} \\
+[8mm]
+
+
+
+
+\Large{\textbf{2020}} & \Large{\textit{Higher Secondary School Examination} CBSE, from  \textbf{Loyola High School} \textbf{89.6}} \\
+ 
+
+
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+% \vspace{-0.1cm}
+\vspace{0.6cm}
+\section{\LARGE{\textcolor{primary}{Experience}}}
+\vspace{0.4cm}
+\begin{tabularx}{\linewidth}{ l | X}
+\Large{\textsc{Jan '23}} & \Large{\textbf{Backend Developer Intern:} Back-End Engineering Virtual Experience, Lyft(Forage)}\\
+
+
+
+\multicolumn{2}{c}{} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\vspace{0.6cm}
+\section{\LARGE{\textcolor{primary}{\href{https://github.com/Pandeyabhigyan}{Projects}}}}\\
+
+\vspace{-0.4cm}
+\begin{tabular}{p{19.7cm}}
+% \fontsize{9}{12}\selectfont{
+\begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+
+
+ \vspace{0.1cm}
+ \item[{\href{https://github.com/Pandeyabhigyan/twitter-clone}{\LARGE{Twitter Clone}}}] 
+ \Large{A working clone made with ReactJs and Google Firebase, that provides basic Twitter features like Tweeting and Commenting.}
+ 
+ 
+\end{description}
+% }
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+\vspace{0.6cm}
+\section{\LARGE{\textcolor{primary}{Technical Skills}}}
+\vspace{0.4cm}
+
+\begin{tabular}{r|p{15cm}}
+\textsc{\Large{Languages}} & \Large{JavaScript (Node.js),Javascript (ReactJs) Python, Java} \\
+\textsc{\Large{Data Storage / Handling}} & \Large{MySQL, SQLite, MongoDB, Google Firebase }\\
+
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Technical Interests
+%----------------------------------------------------------------------------------------
+
+\vspace{0.6cm}
+\section{\LARGE{\textcolor{primary}{Technical Interests}}}
+\vspace{0.4cm}
+
+
+\Large{Cloud Computing, Bot Creation And Task Automation, Game Development, Machine Learning, Big Data, Linux }\\
+
+%----------------------------------------------------------------------------------------
+%	Scholastic Achievements
+%----------------------------------------------------------------------------------------
+
+\vspace{0.4cm}
+\section{\LARGE{\textcolor{primary}{Scholastic Achievements}}}
+
+% %\begin{multicols}{2}
+% - \textbf{IITJEE Advanced \emph{AIR 286}:} Under top 0.15\% amongst more than 2,00,000 students \\
+% - \textbf{IITJEE Mains \emph{AIR 2285}:} In top 0.2\% amongst more than 11,00,000 students. \\
+\vspace{0.4cm}
+
+\Large{ \textbf{National Olympiads:}  Indian National Science Olympiad Stage II} \\
+% - \textbf{RMSEE \emph{AIR 56}:} Ex-Georgian, Student of Rashtriya Military School Chail, Himanchal Pradesh, India. \\
+%\end{multicols}
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
+
